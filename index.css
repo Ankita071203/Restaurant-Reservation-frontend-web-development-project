@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
+
+/* font-family: 'Big Shoulders Text', cursive; */
+
+.nav-mainpart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    z-index: 100;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    
+}
+
+.nav-mainpart li {
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    padding: 20px 15px;
+    font-family:Arial, Helvetica, sans-serif;
+   font-weight: bolder;
+}
+.nav-mainpart li a {
+    font-family:'Courier New', Courier, monospace;
+     color:#0FA3B1 ;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 400;
+    text-decoration:none ;
+    font-weight: bolder;
+}
+
+.section-intro {
+    height: 820px;
+    background-image: url(restaurant.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-intro h1 {
+    text-align: center;
+    color: #F7A072;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.section-intro header {
+    display: flex;
+    flex: 4;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.C1 {
+    flex: 1;
+}
+.c1 a{
+    background-color: #F7A072;
+    color: #0FA3B1;
+}
+.about-section {
+    display: flex;
+    align-items: center;
+    background-color: #EDDEA4;
+    padding: 50px 30px;
+}
+
+.link-to-book {
+    color:#0f35b18e ;
+    display: block;
+    background-color: #F7A072;
+    border: 2px solid wheat;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+a.link-to-book:hover {
+    background-color: #ffffff;
+    color: #95999e;
+    text-decoration: none;
+}
+
+.about-section p,
+.about-section h3 {
+    text-align: center;
+    width: 60%;
+    margin: auto;
+    font-family: 'brush script', cursive;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-family: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;;
+}
+#carouselExampleControls div img{
+    height: 250px;
+    width: 250px;
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 5em;
+}
+#carouselExampleControls h2{
+    text-align: center;
+    letter-spacing: 10px;
+    color:#F7A072;
+}
+.carousel-inner{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.carousel-inner {
+    height: 700px;
+    background-color: #F7A072;
+}
+.carousel-inner h3{
+    text-align: center;
+    color: #F9F7F3;
+}
+.row-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.flex-column-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    margin: 30px 20px;
+}
+
+.btn.btn-primary {
+    font-family: 'Big Shoulders Text', cursive;
+    color: white;
+    background-color: #F7A072;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 5px 10px;
+    letter-spacing: 2px;
+    border: 0;
+    border-radius: 10%;
+    margin: 2px;
+
+}
+
+.btn.btn-primary:hover {
+    background-color: #747474;
+}
+.opening-time,
+.contact-adress {
+    flex: 1;
+    margin: 30px 20px;
+    font-size: 1.2em;
+}
+
+.form-group p {
+    font-size: 1.2em;
+}
+
+.opening-time p span,
+.contact-adress p span {
+    display: block;
+}
+.container{
+    background-color:#B5E2FA ;
+}
+.form-group{
+    margin: 5px;
+}
+h1{
+    text-align: center;
+    color: #0FA3B1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.food:hover{
+    box-shadow: 2px 2px 0.3 black;
+}
+@media (min-width:577px) and (max-width: 800px) {
+
+    .section-intro {
+        height: 500px;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 20px;
+    }
+
+    .carousel-inner {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen  and (max-width: 576px) {
+    .section-intro {
+        height: 300px;
+    }
+
+    .about-section {
+        padding: 30px;
+    }
+
+    .section-intro h1 {
+        font-size: 2em;
+    }
+
+    .about-section p,
+    .about-section h3 {
+        font-size: 15px;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row-flex h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .form-group p {
+        font-size: 15px;
+    }
+
+    .opening-time p span,
+    .contact-adress p span {
+        font-size: 15px;
+        text-align: center;
+    }
+
+}
+h3{
+    font-weight: bolder;
+}
